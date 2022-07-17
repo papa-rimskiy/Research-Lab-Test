@@ -1,0 +1,1 @@
+export const CREATE_ENTRY = "ENTY/CREATE_ENTRY"

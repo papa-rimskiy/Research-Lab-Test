@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 import { CssBaseline } from "@material-ui/core";
 import Buttons from "./Buttons";
-import Registration from "./Registration";
+import Homepage from "./Homepage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,21 +19,21 @@ const useStyles = makeStyles((theme) => ({
     display: "flex"
   }
 }));
-function App() {
+function UserPage() {
   const classes = useStyles();
 
   return (
-    <div className="app">
+    <div className="user_page">
       <CssBaseline />
       <Paper
         className={classes.mainPost}
         style={{ backgroundImage: "url('../images/back-im.jpg')" }}
       >
         <Buttons />
-        <Registration />
+        <Homepage />
       </Paper>
     </div>
   );
 }
 
-export default App;
+export default UserPage;
